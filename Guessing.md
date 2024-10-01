@@ -13,3 +13,4 @@ Start([Start]) --> Generate_Temperature([Generate Random Temperature])
     Too_High_Feedback --> Get_User_Guess
     Too_Low_Feedback --> Get_User_Guess
     Correct_Feedback --> End([End])
+The game begins by prompting the user to guess a randomly generated temperature between 0°C and 40°C. After the user inputs their guess, it is validated for correctness; invalid inputs trigger an error message and a prompt to try again. The user's guess is then compared to the generated temperature, providing feedback if it’s too high, too low, or correct. Upon a correct guess, the user is congratulated, and the game concludes, inviting them to play again.
